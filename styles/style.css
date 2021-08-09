@@ -122,6 +122,7 @@ li.active {
   position: relative;
   top: 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/2928116/pexels-photo-2928116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -132,9 +133,9 @@ li.active {
 
 #container > section > #card-header {
   width: 80%;
-  height: 70%;
+  height: auto;
   margin-top: 0px;
-  padding: 40px 7px;
+  padding: 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,7 +151,7 @@ li.active {
 }
 
 #container > section > #card-header > h2 {
-  font-size: 4.2rem;
+  font-size: 4rem;
   color: #fff;
   text-align: center;
 }
