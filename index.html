@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design Layout</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div id="container">
+    <nav>
+
+      <h2>Travel</h2>
+
+      <ul>
+        <li class="active">Home</li>
+        <li>Booking</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+      </ul>
+
+      <div id="menu">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </nav>
+    <section>
+      <div id="card-header">
+        <p>Adventure</p>
+        <h2>Traveling is Easier than You think.</h2>
+
+        <h4>Book Now!</h4>
+      </div>
+    </section>
+    <div id="gallery">
+      <div class="cards"></div>
+      <div class="cards"></div>
+      <div class="cards"></div>
+    </div>
+
+
+
+    <!-- MENU FOR MOBILE -->
+    <div id="showList">
+      <ul>
+        <li class="active">Home</li>
+        <li>Booking</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+      </ul>
+    </div>
+
+
+  </div>
+  <script>
+    document.getElementById("menu").addEventListener("click", showMenu);
+
+    function showMenu(){
+      const showList = document.querySelector("#showList");
+      const adjustLeft = document.querySelector("#menu");
+      showList.classList.toggle("showMenu");
+      adjustLeft.classList.toggle("adjustLeft");
+    }
+  </script>
+</body>
+</html>
